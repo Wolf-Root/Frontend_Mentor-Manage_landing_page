@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage landing page">
+    <meta name="keywords" content="project management, team collaboration, landing page design, manage app">
+    <title>Manage - Landing Page</title>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Glide CSS -->
+    <link rel="stylesheet" href="css/Glide.core.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/favicon-32x32.png">
+
+</head>
+
+<body>
+
+    <!-- Overlay -->
+    <div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 z-1 d-none"></div>
+
+    <!-- Header -->
+    <header class="py-3 position-fixed start-50 translate-middle-x w-100 z-3">
+        <div class="container d-flex align-items-baseline justify-content-between">
+            <a href="#Hero">
+                <img src="assets/images/logo.svg" alt="logo" class="img-fluid">
+            </a>
+
+            <!-- Disktop NavBar  -->
+            <nav class="d-none d-md-flex align-items-center justify-content-between w-100 h-100">
+                <!-- Links -->
+                <ul class="d-flex align-items-center gap-4 mx-auto mb-0">
+                    <li><a class="text-decoration-none text-dark link-secondary" href="#Pricing">Pricing</a></li>
+                    <li><a class="text-decoration-none text-dark link-secondary" href="#Product">Product</a></li>
+                    <li><a class="text-decoration-none text-dark link-secondary" href="#AboutUs">About Us</a></li>
+                    <li><a class="text-decoration-none text-dark link-secondary" href="#Careers">Careers</a></li>
+                    <li><a class="text-decoration-none text-dark link-secondary" href="#Community">Community</a></li>
+                </ul>
+                <a href="#Simplify">
+                    <button class="PrimaryButton">Get Started</button>
+                </a>
+            </nav>
+
+            <!-- Mobile NavBar Open -->
+            <button id="open" class="menu btn d-flex d-md-none w-auto" aria-label="Toggle mobile menu"
+                aria-expanded="false" aria-controls="mobileMenu">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+
+            <!-- Mobile Menu  -->
+            <nav id="mobileMenu"
+                class="d-md-none position-absolute top-100 start-50 translate-middle-x py-4 my-2 bg-white shadow-lg">
+                <!-- Links -->
+                <ul class="d-flex flex-column text-center gap-3 p-0">
+                    <li><a class="text-decoration-none text-dark link-danger" href="#Pricing">Pricing</a></li>
+                    <li><a class="text-decoration-none text-dark link-danger" href="#Product">Product</a></li>
+                    <li><a class="text-decoration-none text-dark link-danger" href="#About Us">About Us</a></li>
+                    <li><a class="text-decoration-none text-dark link-danger" href="#Careers">Careers</a></li>
+                    <li><a class="text-decoration-none text-dark link-danger" href="#Community">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content  -->
+    <main>
+        <!-- Hero -->
+        <section id="Hero">
+            <div class="min-vh-100 pt-5 container d-flex align-items-center">
+                <div class="row align-items-center flex-column-reverse flex-md-row">
+                    <!-- left -->
+                    <div class="col-md-6 text-center text-md-start">
+                        <h1 class="fw-bold w-100 w-md-75 py-1">Bring everyone together to build better products.</h1>
+                        <p class="w-100 w-lg-50 py-1">
+                            Manage makes it simple for software teams to plan day-to-day
+                            tasks while keeping the larger team goals in view.
+                        </p>
+                        <a href="#Simplify">
+                            <button class="PrimaryButton">Get Started</button>
+                        </a>
+                    </div>
+
+                    <!-- right -->
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <img src="assets/images/illustration-intro.svg" alt="illustration intro" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="AboutUS">
+            <div class="container">
+                <div class="row align-items-start flex-column flex-md-row">
+                    <!-- left -->
+                    <div class="col-md-6 text-center text-md-start">
+                        <h2>What's different about Manage?</h2>
+                        <p class="py-1">
+                            Manage provides all the functionality your team needs, without the complexity. <br> Our
+                            software
+                            is tailor-made for modern digital product teams.
+                        </p>
+                    </div>
+
+                    <!-- right -->
+                    <div class="col-md-6">
+                        <!-- item 1 -->
+                        <div class="d-flex flex-column gap-3">
+                            <!-- heading -->
+                            <div class="item-heading d-flex gap-2 gap-md-4 align-items-baseline rounded-start-5">
+                                <span class="itemNumber px-3 px-md-4 py-1 rounded-5 fs-5 ">01</span>
+                                <h3>Track company-wide progress</h3>
+                            </div>
+                            <!-- Description -->
+                            <p class="col-md-10 align-self-end">
+                                See how your day-to-day tasks fit into the wider vision. Go from
+                                tracking progress at the milestone level all the way done to the
+                                smallest of details. Never lose sight of the bigger picture again.
+                            </p>
+                        </div>
+
+                        <!-- item 2 -->
+                        <div class="d-flex flex-column gap-3">
+                            <!-- heading -->
+                            <div class="item-heading d-flex gap-2 gap-md-4 align-items-baseline rounded-start-5">
+                                <span class="itemNumber px-3 px-md-4 py-1 rounded-5 fs-5 ">02</span>
+                                <h3>Advanced built-in reports</h3>
+                            </div>
+                            <!-- Description -->
+                            <p class="col-md-10 align-self-end">
+                                Set internal delivery estimates and track progress toward company
+                                goals. Our customisable dashboard helps you build out the reports
+                                you need to keep key stakeholders informed.
+                            </p>
+                        </div>
+
+                        <!-- item 3 -->
+                        <div class="d-flex flex-column gap-3">
+                            <!-- heading -->
+                            <div class="item-heading d-flex gap-2 gap-md-4 align-items-baseline rounded-start-5">
+                                <span class="itemNumber px-3 px-md-4 py-1 rounded-5 fs-5 ">03</span>
+                                <h3>Everything you need in one place</h3>
+                            </div>
+                            <!-- Description -->
+                            <p class="col-md-10 align-self-end">
+                                Everything you need in one place
+                                Stop jumping from one service to another to communicate, store files,
+                                track tasks and share documents. Manage offers an all-in-one team
+                                productivity solution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonies -->
+        <section id="Testimonies">
+            <!-- heading -->
+            <div class="d-flex flex-column align-items-center my-5">
+                <h2>What they've said</h2>
+
+                <!-- Testimonies gride -->
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <div class="glide__slides py-5 row">
+
+                            <!-- box 1 -->
+                            <div
+                                class="glide__slide bg-light h-auto d-flex flex-column align-items-center text-center py-1 px-3 rounded-3">
+                                <img src="assets/images/avatar-anisha.png" alt="Avatar Anisha Li"
+                                    class="avatar img-fluid translate-middle-y">
+                                <h3 class="fs-4 fw-semibold translate-middle-y">Anisha Li</h3>
+                                <p class="px-2">
+                                    “Manage has supercharged our team’s workflow. The ability to maintain
+                                    visibility on larger milestones at all times keeps everyone motivated.”
+                                </p>
+                            </div>
+
+                            <!-- box 2 -->
+                            <div
+                                class="glide__slide bg-light h-auto d-flex flex-column align-items-center text-center py-1 px-3 rounded-3">
+                                <img src="assets/images/avatar-ali.png" alt="Avatar Ali Bravo"
+                                    class="avatar img-fluid translate-middle-y">
+                                <h3 class="fs-4 fw-semibold translate-middle-y">Ali Bravo</h3>
+                                <p class="px-2">
+                                    “We have been able to cancel so many other subscriptions since using
+                                    Manage. There is no more cross-channel confusion and everyone is much
+                                    more focused.”
+                                </p>
+                            </div>
+
+                            <!-- box 3 -->
+                            <div
+                                class="glide__slide bg-light h-auto d-flex flex-column align-items-center text-center py-1 px-3 rounded-3">
+                                <img src="assets/images/avatar-richard.png" alt="Avatar Richard Watts"
+                                    class="avatar img-fluid translate-middle-y">
+                                <h3 class="fs-4 fw-semibold translate-middle-y">Richard Watts</h3>
+                                <p class="px-2">
+                                    “Manage allows us to provide structure and process. It keeps us organized
+                                    and focused. I can’t stop recommending them to everyone I talk to!”
+                                </p>
+                            </div>
+
+                            <!-- box 4 -->
+                            <div
+                                class="glide__slide bg-light d-flex h-auto flex-column align-items-center text-center py-1 px-3 rounded-3">
+                                <img src="assets/images/avatar-shanai.png" alt="Avatar Shanai Gough"
+                                    class="avatar img-fluid translate-middle-y">
+                                <h3 class="fs-4 fw-semibold translate-middle-y">Shanai Gough</h3>
+                                <p class="px-2">
+                                    “Their software allows us to track, manage and collaborate on our projects
+                                    from anywhere. It keeps the whole team in-sync without being intrusive.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#Simplify">
+                    <button class="PrimaryButton">Get Started</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Simplify -->
+        <section id="Simplify">
+            <div
+                class="container d-flex flex-column flex-md-row justify-content-between align-items-center h-100 mt-5 py-5 text-center text-md-start">
+                <h2 class="text-light fw-semibold">Simplify how your team works today.</h2>
+                <a href="#Simplify" class="mt-3 mt-md-0">
+                    <button class="SecondaryButton">Get Started</button>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container py-5">
+            <div class="row d-flex flex-column-reverse flex-md-row">
+                <!-- Mobile Copyright -->
+                <p class="d-block d-md-none text-center mt-5 text-light-emphasis fw-semibold">
+                    Copyright 2025. All Rights Reserved
+                </p>
+
+                <!-- col 1 -->
+                <!-- Logo and Social Media Icons -->
+                <div
+                    class="col-md-6 col-lg-4 d-flex flex-column-reverse flex-md-column align-items-center align-items-md-start justify-content-between">
+                    <img src="assets/images/logo-white.svg" alt="logo" class="img-fluid">
+
+                    <ul class="d-flex p-0 gap-4">
+                        <li>
+                            <a href="#" class="fs-4" aria-label="Facebook"><i
+                                    class="fa-brands fa-square-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-4" aria-label="instagram"><i
+                                    class="fa-brands fa-square-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-4" aria-label="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-4" aria-label="github"><i class="fa-brands fa-square-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- col 2 -->
+                <!-- Links -->
+                <div class="col-md-6 col-lg-4 d-flex justify-content-around justify-content-md-between py-4 py-md-0">
+                    <!-- col 1 -->
+                    <div class="col-4">
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="d-flex flex-column gap-2 p-0">
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- col 3 -->
+                <!-- Form -->
+                <div class="col-lg-4 d-flex flex-column align-items-center justify-content-between gap-3">
+                    <form class="d-flex align-items-start justify-content-center gap-3">
+                        <input type="email" id="newsletter" name="newsletter" placeholder="Enter your email"
+                            aria-label="Email for newsletter" required class="p-2 rounded-5" />
+
+                        <button class="PrimaryButton rounded-5">Go</button>
+                    </form>
+                    <p class="d-none d-md-block text-light-emphasis fw-semibold">Copyright 2025. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery JavaScript -->
+    <script src="JavaScript/jQuery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="JavaScript/bootstrap.min.js"></script>
+    <!-- Glide JavaScript -->
+    <script src="JavaScript/Glide.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="JavaScript/main.js"></script>
+</body>
+
+</html>
